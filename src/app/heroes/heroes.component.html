@@ -1,4 +1,5 @@
 <h2>My Heroes</h2>
+<app-add-hero (onAddSuccess)="handleAddSuccess($event)"></app-add-hero>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
